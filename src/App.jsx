@@ -4,7 +4,7 @@ import ContactList from "./components/ContactList/ContactList";
 import SearchBox from "./components/SearchBox/SearchBox";
 import ContactForm from "./components/ContactForm/ContactForm";
 const LOCAL_STORAGE_KEY = "contacts";
-import { fetchContact } from "./redux/operations";
+import { fetchContact } from "./redux/contactsOps";
 import { selectLoading, selectError } from "./redux/contactsSlice";
 
 const App = () => {
