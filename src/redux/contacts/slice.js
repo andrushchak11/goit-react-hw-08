@@ -1,5 +1,5 @@
 import { createSlice, createSelector } from "@reduxjs/toolkit";
-import { fetchContact, addContact, deleteContact } from "./contactsOps";
+import { fetchContact, addContact, deleteContact } from "./operations";
 
 const contactsSlice = createSlice({
   name: "contacts",
@@ -67,4 +67,4 @@ export const selectFilteredContacts = createSelector(
   }
 );
 
-export default contactsSlice.reducer;
+export const contactsReducer = contactsSlice.reducer;
